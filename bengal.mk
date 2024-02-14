@@ -220,10 +220,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health-service.qti
-    android.hardware.health@2.1-impl:64 \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.qti \
+  
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -374,8 +372,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     libjson \
     libprotobuf-cpp-full \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     librmnetctl \
     libxml2
 
@@ -470,7 +466,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi-service \
+    android.hardware.wifi@1.0-service \
     hostapd \
     libqsap_sdk \
     libwpa_client \
